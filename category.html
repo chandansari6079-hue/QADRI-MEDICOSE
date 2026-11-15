@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Qadri Medicose pharmaceutical product catalogue.">
+  <meta name="theme-color" content="#28543b">
+  <title>Product Catalogue | Qadri Medicose</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span><i class="fa-solid fa-circle-plus"></i> Healthcare Products & Pharmaceutical Services</span>
+      <span><i class="fa-solid fa-envelope"></i> Kadrimedical77@gmail.com</span>
+    </div>
+  </div>
+  <nav class="navbar container">
+    <a href="index.html" class="logo">
+      <span class="qm-logo">QM<i class="fa-solid fa-leaf"></i></span>
+      <span class="brand-name">QADRI <b>MEDICOSE</b><small>— HEALTHCARE & PHARMA —</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About Us</a></li>
+      <li class="has-dropdown">
+        <a href="index.html#products">Products <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown-menu" id="categoryDropdown"></ul>
+      </li>
+      <li><a href="index.html#services">Our Services</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a class="header-cta" href="https://wa.me/919997773877" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+  </nav>
+</header>
+
+<main>
+  <section class="category-banner">
+    <div class="container">
+      <div class="category-breadcrumb">
+        <a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i>
+        <a href="index.html#products">Products</a><i class="fa-solid fa-chevron-right"></i>
+        <span id="breadcrumbCategory">Catalogue</span>
+      </div>
+      <div class="category-banner-content">
+        <div>
+          <span class="section-tag">QADRI MEDICOSE PRODUCT RANGE</span>
+          <h1 id="categoryTitle">Product Catalogue</h1>
+          <p id="categoryDescription">Explore our pharmaceutical product catalogue.</p>
+          <a href="index.html#products" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to all categories</a>
+        </div>
+        <div class="category-banner-icon"><i id="categoryIcon" class="fa-solid fa-capsules"></i><span class="banner-icon-leaf"><i class="fa-solid fa-leaf"></i></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalogue-section">
+    <div class="container">
+      <div class="catalogue-tools">
+        <div class="catalogue-heading">
+          <span class="section-tag">PRODUCT LIST</span>
+          <h2>Available <span>Products</span></h2>
+          <p id="productCount">Loading products...</p>
+        </div>
+        <label class="catalogue-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" id="productSearch" placeholder="Search product name or composition..." aria-label="Search products">
+        </label>
+      </div>
+      <div class="catalogue-grid" id="catalogueGrid">
+        <p>Loading catalogue...</p>
+      </div>
+      <div class="product-note">
+        <i class="fa-solid fa-circle-info"></i>
+        <p>Product information is provided for catalogue enquiries. Availability, packing and other details should be confirmed with Qadri Medicose. Prescription medicines are subject to applicable requirements.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner container">
+    <a href="index.html" class="logo footer-logo"><span class="qm-logo">QM<i class="fa-solid fa-leaf"></i></span><span class="brand-name">QADRI <b>MEDICOSE</b><small>— HEALTHCARE & PHARMA —</small></span></a>
+    <p class="footer-address"><i class="fa-solid fa-location-dot"></i> Paiganagri urf Nagariya Bhagat, Meerganj, Bareilly, Uttar Pradesh</p>
+    <div class="footer-links"><a href="index.html#home">Home</a><a href="index.html#about">About</a><a href="index.html#products">Categories</a><a href="index.html#contact">Contact</a></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Qadri Medicose. All Rights Reserved.</span><span>Care. Quality. Trust.</span></div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919997773877" target="_blank" rel="noopener" class="floating-whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<script src="script.js"></script>
+</body>
+</html>
